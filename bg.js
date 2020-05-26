@@ -28,11 +28,9 @@ chrome.tabs.onUpdated.addListener(function (tabid, changeinfo, tab) {
                 chrome.browserAction.setIcon({path: "img/temp.png", tabId: tab.id});
 
             // show badge
-
-
-                const tabBlockedCount = response.pageSourcesForbiddenLength;
-                chrome.browserAction.setBadgeBackgroundColor({ color: [51, 0, 51, 230] });
-                chrome.browserAction.setBadgeText({text: tabBlockedCount + '', tabId: tab.id});
+            const tabBlockedCount = response.pageSourcesForbiddenLength;
+            chrome.browserAction.setBadgeBackgroundColor({ color: [51, 0, 51, 230] });
+            //chrome.browserAction.setBadgeText({text: tabBlockedCount + '', tabId: tab.id});
         });
     }
     else {
