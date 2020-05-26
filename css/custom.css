@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    padding: 14px;
+}
+body:before {
+    content: "ScriptBlocker";
+    display: block;
+    font-size: 18px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 14px;
+}
+
+hr {
+    border: none;
+}
+.ui-widget {
+    font-family: sans-serif !important;
+    font-size: 1.1em;
+}
+div.urlActionForm,
+div.urlActionForm:hover {
+    margin-bottom: 6px;
+    background: #FFFFFF;
+    border-width: 1px;
+    border-color: #0e72d6;
+}      
+div.urlActionForm label.ui-state-default {
+    background: #e6e6e6;
+    color: #888;
+}
+div.urlActionForm label.ui-state-default:hover {
+    background: #e6e6e6;
+    color: #000;
+    border: 1px solid #d3d3d3;
+}
+div.urlActionForm label.ui-state-active {
+    background: #fff;
+    color: #000;
+}
+div.urlActionForm label.ui-state-active:hover {
+    background: #efefef;
+    border: 1px solid #aaa;
+} 
+div.urlTitle {
+    padding: 6px 0px 6px 0px;
+    color: #0e72d6;
+}
+.aRadioSetDiv + div.urlTitle {
+    padding: 0px 0px 5px 0px;
+    font-size: 12px;
+}
+a.ratedUrl,
+a.infoUrl,
+#bottomLinks a {
+    font-size: 10px;
+    text-decoration: none;
+    padding: 0 3px;
+    color: #444;
+}
+
+#bottomLinks {
+    color: #ccc;
+} 
+#bottomLinks a {
+    padding: 0;
+}        
+
+#wrapperSpacerTop,
+#wrapperSpacerBottom {
+    background: transparent;    
+    padding: 0;
+    margin: 0;
+    height: 0 !important;
+}
+
+.actionButton {
+    background: none;
+}
+.actionButton:hover {
+    background: #eee;
+}
+#revokeAllTemp {
+    text-transform: lowercase;
+}
+#revokeAllTemp::first-letter { 
+    text-transform: uppercase;
+}
+#revokeAllTemp br { content:' '; }
+#revokeAllTemp br:after { content:' '; }
+
+/* Order */
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+#divMultiSelect { order: 6; } 
+#tempAllowAllShown { order: 8; } 
+#allowAllShown { order: 9; } 
+#blockAllShown { order: 10; } 
+#globalAllowTemp { order: 11; }
+#revokeAllTemp { order: 12; }
+#bottomLinks { order: 20; }
