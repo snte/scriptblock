@@ -13,8 +13,4 @@ Also, make a backup copy of this file because when ScriptBlock updates, Google C
 If you change to a different password, make sure that you clear your browser HTML5 storage by clearing the cookies.
 */
 
-
-
-
-
-const ENCRYPTION_PASSWORD = "1gnepnvj387fb3f3f8bhB6fvgzvgVTCFCFCGC4sfd";
+const ENCRYPTION_PASSWORD = "XqrZSdVD0jbNuXEOZnBnFtw2s5f8COo0JqaL2rxtXQhlf";
